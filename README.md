@@ -31,40 +31,56 @@
 ---
 
 ## 🚜 Problem Statement
+Farmers often face significant crop losses due to late disease detection, incorrect pesticide dosage, and lack of timely, accessible agricultural advisory systems—especially in regional languages.
 
-Farmers in India face significant crop losses and financial distress due to:
-* ❌ **Late Disease Identification:** Lack of timely access to agricultural experts.
-* ❌ **Incorrect Pesticide Dosage:** Guesswork leads to chemical overuse and soil damage.
-* ❌ **Language Barriers:** Most advisory systems are not available in regional languages.
-* ❌ **Static Information:** Generic chatbots lack real-time context like weather or field size.
+---
 
-> **The Solution:** A unified, Agentic AI platform that acts as a **Digital Agronomist**, combining Computer Vision (Sight), GenAI (Reasoning), and Voice (Speech) to guide farmers in Hindi.
+## 💡 Solution
+The AI-Powered Kisan Assistance Platform provides a unified AI-driven solution that:
+- Detects potato crop diseases from images
+- Generates document-grounded treatment recommendations using GenAI
+- Calculates exact pesticide dosage
+- Provides weather-based risk advisories
+- Enables conversational support via chatbot and Hindi voice assistant
 
 ---
 
 ## ✨ Key Features
+- 📸 Potato disease detection (Early & Late Blight) with **99%+ accuracy**
+- 🧠 GenAI-based treatment recommendations using **Agentic RAG**
+- 💊 Spray quantity calculation based on field size
+- 🌦️ 24-hour weather-based disease risk prediction
+- 💬 Memory-enabled AI chatbot for follow-up queries
+- 🎙️ Hindi voice assistant using **VAPI.ai webhook-based tool calling**
 
-### 1. 📸 Precision Disease Detection
-* Custom **CNN Model** trained on potato leaf datasets.
-* Detects **Early Blight** and **Late Blight** with **99%+ accuracy**.
-* Provides instant visual feedback on crop health.
+---
 
-### 2. 🧠 Agentic RAG Advisory (The "Brain")
-* Uses **Spring AI** to orchestrate an autonomous agent.
-* **Document Grounded:** Retrieves treatment protocols from verified agricultural PDFs (stored in **Qdrant**).
-* **Memory Enabled:** Remembers context across the conversation for follow-up queries.
+## 🛠️ Tech Stack
+- **Backend:** Spring Boot, Spring AI, Microservices, REST APIs  
+- **AI / ML:** CNN, LLMs, Agentic RAG  
+- **Vector Database:** Qdrant  
+- **Frontend:** React.js  
+- **Voice AI:** VAPI.ai  
+- **DevOps:** Docker  
 
-### 3. 💊 Smart Dosage Engine
-* Unlike generic tools, our system asks for the field size (acres/hectares).
-* Calculates the **exact pesticide quantity** needed, minimizing cost and environmental impact.
+---
 
-### 4. 🌦️ Weather-Aware Risk Guard
-* The Agent proactively checks **24-hour weather forecasts** before recommending sprays.
-* *Scenario:* If rain is predicted, the AI warns the farmer to delay spraying to prevent washout.
+## 🏗️ System Architecture
+Image Upload → CNN Disease Detection →  
+Agentic RAG (Qdrant + LLM) →  
+Treatment & Advisory APIs →  
+React UI / Hindi Voice Assistant
 
-### 5. 🎙️ Hindi Voice Assistant
-* Integrated with **VAPI.ai** using **Webhook-based tool calling**.
-* Farmers can speak naturally in Hindi (*"Mere aaloo mein keeda laga hai"*), and the system responds with voice audio powered by the backend knowledge base.
+---
+
+## 🚀 How to Run (High-Level)
+1. Clone the repository  
+2. Start backend services (Spring Boot)  
+3. Start frontend (React.js)  
+4. Configure vector database (Qdrant)  
+5. Access the application via browser  
+
+> Detailed setup steps can be added based on deployment environment.
 
 ---
 
