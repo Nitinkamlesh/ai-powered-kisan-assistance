@@ -27,11 +27,11 @@ The platform seamlessly integrates Computer Vision, Agentic RAG, Large Language 
 
 ## 🚜 Problem Statement
 
--Farmers face severe crop losses due to:
--Late disease identification
--Incorrect pesticide dosage
--Non-personalized advisory systems
--Lack of regional language support
+- Farmers face severe crop losses due to:
+- Late disease identification
+- Incorrect pesticide dosage
+- Non-personalized advisory systems
+- Lack of regional language support
 
 ---
 
