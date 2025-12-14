@@ -1,154 +1,85 @@
-# 🌾 AI-Powered Kisan Assistance Platform 🤖  
+# 🌾 AI-Powered Kisan Assistance Platform 🤖
 ### Agentic GenAI System for Smart & Sustainable Agriculture
 
 <p align="center">
-  <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/>
+  <img src="assets/logo.png" alt="Kisan AI Logo" width="200"/>
 </p>
 
 <p align="center">
   <b>
-    An end-to-end AI + GenAI powered agriculture intelligence platform that helps
+    An end-to-end AI + GenAI powered agriculture intelligence platform that helps 
     farmers make accurate, timely, and language-friendly decisions.
   </b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet"/>
-  <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen"/>
-  <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange"/>
-  <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red"/>
-  <img src="https://img.shields.io/badge/Docker-Ready-blue"/>
+  <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet?style=for-the-badge&logo=openai"/>
+  <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen?style=for-the-badge&logo=spring"/>
+  <img src="https://img.shields.io/badge/Computer%20Vision-CNN-orange?style=for-the-badge&logo=tensorflow"/>
+  <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red?style=for-the-badge&logo=googletranslate"/>
+  <img src="https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker"/>
+</p>
+
+<p align="center">
+  <a href="#-project-overview">Overview</a> •
+  <a href="#-system-architecture">Architecture</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-key-features">Features</a> •
+  <a href="#-installation">Installation</a>
 </p>
 
 ---
 
 ## 🚀 Project Overview
 
-**AI-Powered Kisan Assistance Platform** is a **production-ready Agentic GenAI system**
-designed to empower farmers with **intelligent, timely, and accessible agricultural assistance**.
+**AI-Powered Kisan Assistance Platform** is a **production-ready Agentic GenAI system** designed to empower farmers with intelligent, timely, and accessible agricultural assistance. Bridging the gap between complex agronomy data and rural farmers, we utilize **Agentic RAG** and **Voice AI** to deliver expert advice in Hindi.
 
-### 🌾 What the Platform Delivers
-- 🌱 **Early crop disease detection** using Computer Vision  
-- 💊 **Precise pesticide dosage recommendations** to prevent overuse  
-- 🌦️ **Weather-aware risk alerts** for safe and effective spraying  
-- 💬 **Conversational assistance in Hindi** via chat & voice AI  
+### 🎥 Demo Video
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://youtu.be/YOUR_VIDEO_LINK)
+---
 
-### 🧠 Technology at the Core
-This platform seamlessly integrates:
-- Computer Vision (CNN)
-- Agentic RAG (Retrieval-Augmented Generation)
-- Large Language Models (LLMs)
-- Voice AI  
+## 🚜 The Problem Statement
 
-into a **single intelligent agriculture assistant**, ensuring:
-- ✅ Document-grounded answers  
-- ✅ Accurate recommendations  
-- ✅ Farmer-friendly explanations  
+Farmers in India face severe crop losses and financial distress due to:
+* ❌ **Late Disease Identification:** Lack of access to experts for immediate diagnosis.
+* ❌ **Incorrect Pesticide Usage:** Overuse of chemicals damages soil health and increases costs.
+* ❌ **Generic Advice:** Weather and soil conditions are hyper-local; generic advisories fail.
+* ❌ **Language Barrier:** Most high-tech tools are in English, excluding the rural demographic.
+
+> **Our Solution:** A single intelligent assistant combining **Computer Vision** (eyes), **LLMs** (brain), and **Voice AI** (speech) to guide farmers from diagnosis to dosage.
 
 ---
 
-## 🚜 Problem Statement
+## 🧠 System Architecture
 
-Farmers face severe crop losses due to:
+We utilize an **Agentic RAG (Retrieval-Augmented Generation)** approach where the AI doesn't just "chat"—it orchestrates tools to validate dosage, check weather, and retrieve scientific data.
 
-- ❌ Late disease identification  
-- ❌ Incorrect pesticide dosage  
-- ❌ Non-personalized advisory systems  
-- ❌ Lack of regional language support  
-
-> Existing solutions are **fragmented, non-AI, and non-interactive**.
-
----
-
-## 🧠 System Flow (Agentic RAG Architecture)
-
+```mermaid
 flowchart TD
+    subgraph User_Interaction
+      A[📸 Image Upload] --> B[CNN Disease Detection]
+      H[🎙️ Hindi Voice Input] --> I[Voice-to-Text]
+    end
 
-A[Crop Image Upload] --> B[CNN Disease Detection]
+    subgraph Decision_Engine
+      B -->|Disease Detected| C[Agentic RAG Orchestrator]
+      I --> C
+      
+      C --> D1{Query Planner}
+      D1 -->|Retrieve Info| D2[(Qdrant Vector DB)]
+      D1 -->|Scientific Validation| D3[LLM Reasoner]
+      
+      D3 --> E[💊 Dosage Calculator Engine]
+      D3 --> F[🌦️ Weather Risk Engine]
+    end
 
-B -->|Healthy| C1[Healthy Crop]
-B -->|Disease Detected| C2[Early / Late Blight]
+    subgraph Output
+      E --> G[Final Response Generator]
+      F --> G
+      G -->|Visual| UI[Web Dashboard]
+      G -->|Audio| V[VAPI.ai Voice Output]
+    end
 
-C2 --> D[Agentic RAG Orchestrator]
-
-subgraph RAG_PIPELINE [Agentic RAG Pipeline]
-    D1[Query Rewriter Agent]
-    D2[Qdrant Vector Retrieval]
-    D3[LLM Answer Generator]
-    D4[Critic & Validation Agent]
-
-    D1 --> D2
-    D2 --> D3
-    D3 --> D4
-end
-
-D --> D1
-D4 --> E[Treatment & Spray Dosage Engine]
-E --> F[Weather Risk Advisory Engine]
-
-F --> G[Web Dashboard - React]
-F --> H[Hindi Voice Assistant - VAPI.ai]
-
-G --> I[Farmer Decision Support]
-H --> I
-
-
-flowchart TD
-
-A[📸 Image Upload]
-B[🧠 CNN Detection]
-C[🧠 Agentic RAG]
-D[💊 Dosage Engine]
-E[🌦️ Weather Engine]
-F[🖥️ Web UI]
-G[🎙️ Voice AI]
-H[👨‍🌾 Farmer]
-
-A --> B --> C --> D --> E
-E --> F --> H
-E --> G --> H
-
-classDef vision fill:#FFE0B2,stroke:#E65100,stroke-width:2px;
-classDef ai fill:#E1F5FE,stroke:#0277BD,stroke-width:2px;
-classDef engine fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px;
-classDef ui fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2px;
-classDef user fill:#FFFDE7,stroke:#F9A825,stroke-width:2px;
-
-class A,B vision
-class C ai
-class D,E engine
-class F,G ui
-class H user
-
-
-flowchart LR
-
-subgraph Frontend
-UI[React Web App]
-end
-
-subgraph Backend [Spring Boot Microservices]
-IMG[Image Service]
-CNN[CNN Prediction Service]
-RAG[Agentic RAG Service]
-DOS[Dosage Service]
-WEA[Weather Service]
-VOICE[Voice Webhook Service]
-end
-
-subgraph AI_Data
-QDR[Qdrant Vector DB]
-LLM[LLM Provider]
-end
-
-UI --> IMG
-IMG --> CNN
-CNN --> RAG
-RAG --> QDR
-RAG --> LLM
-RAG --> DOS
-DOS --> WEA
-WEA --> UI
-
-VOICE --> RAG
-VOICE --> UI
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style D2 fill:#bbf,stroke:#333,stroke-width:2px
+    style B fill:#bfb,stroke:#333,stroke-width:2px
