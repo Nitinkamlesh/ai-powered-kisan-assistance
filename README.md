@@ -1,34 +1,38 @@
-# 🌾 AI-Powered Kisan Assistance Platform 🤖
-### Agentic GenAI System for Smart & Sustainable Agriculture
+<h1 align="center">🌾 AI-Powered Kisan Assistance Platform 🤖</h1>
 
 <p align="center">
-  <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/>
-  </p>
-
-<p align="center">
-  <b>
-    An end-to-end GenAI-powered agriculture assistance system helping farmers detect 
-    crop diseases early, optimize pesticide usage, and make informed decisions.
-  </b>
+  <b>Agentic GenAI System for Smart & Sustainable Agriculture</b>
 </p>
 
 <p align="center">
-  <a href="#-demo-video">View Demo</a> •
+  <img src="assets/logo.png" width="160" alt="Kisan AI Logo"/>
+</p>
+
+<p align="center">
+  An end-to-end <b>GenAI-powered agriculture intelligence platform</b> helping farmers
+  detect crop diseases early, optimize pesticide usage, and make
+  <b>timely, language-friendly decisions</b>.
+</p>
+
+<p align="center">
+  <a href="#-problem-statement">Problem</a> •
+  <a href="#-solution">Solution</a> •
   <a href="#-key-features">Features</a> •
   <a href="#-system-architecture">Architecture</a> •
   <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-getting-started">Setup</a>
+  <a href="#-how-to-run-high-level">Setup</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen?style=for-the-badge&logo=spring"/>
-  <img src="https://img.shields.io/badge/Vision-CNN%2099%25-orange?style=for-the-badge&logo=tensorflow"/>
-  <img src="https://img.shields.io/badge/Voice-VAPI.ai-red?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Backend-Spring%20Boot-green?style=for-the-badge&logo=springboot"/>
+  <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet"/>
+  <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen"/>
+  <img src="https://img.shields.io/badge/CNN-Vision%2099%25-orange"/>
+  <img src="https://img.shields.io/badge/Voice-Hindi-red"/>
+  <img src="https://img.shields.io/badge/Docker-Ready-blue"/>
 </p>
 
 ---
+
 
 ## 🚜 Problem Statement
 Farmers often face significant crop losses due to late disease detection, incorrect pesticide dosage, and lack of timely, accessible agricultural advisory systems—especially in regional languages.
