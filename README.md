@@ -49,7 +49,6 @@ Indian farmers face significant crop losses due to:
 
 ---
 
-makr this alos adbvance
 
 ## 💡 Solution
 
