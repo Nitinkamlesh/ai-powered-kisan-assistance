@@ -1,41 +1,66 @@
-# AI-Powered Kisan Assistance Platform 🌾🤖
+# 🌾 AI-Powered Kisan Assistance Platform 🤖  
+### Agentic GenAI System for Smart & Sustainable Agriculture
 
-🌾 AI-Powered Kisan Assistance Platform 🤖
-Agentic GenAI System for Smart & Sustainable Agriculture
-<p align="center"> <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/> </p> <p align="center"> <b> An end-to-end AI + GenAI powered agriculture intelligence platform that helps farmers make accurate, timely, and language-friendly decisions. </b> </p> <p align="center"> <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet"/> <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen"/> <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange"/> <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red"/> <img src="https://img.shields.io/badge/Docker-Ready-blue"/> </p>
+<p align="center">
+  <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/>
+</p>
 
+<p align="center">
+  <b>
+    An end-to-end AI + GenAI powered agriculture intelligence platform that helps
+    farmers make accurate, timely, and language-friendly decisions.
+  </b>
+</p>
 
-
-## 🚀 Project Overview
-AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed to empower farmers with intelligent, timely, and accessible agricultural assistance.
-- 🌾 What the platform delivers
-- 🌱 Early crop disease detection using computer vision
-- 💊 Precise pesticide dosage recommendations to prevent overuse
-- 🌦️ Weather-aware risk alerts for safe and effective spraying
-- 💬 Conversational assistance in Hindi via chat and voice AI
-- 🧠 Technology at the core
-The platform seamlessly integrates Computer Vision, Agentic RAG, Large Language Models (LLMs), and Voice AI into a single intelligent agriculture assistant, enabling accurate, document-grounded, and farmer-friendly decision support.
+<p align="center">
+  <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet"/>
+  <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen"/>
+  <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange"/>
+  <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red"/>
+  <img src="https://img.shields.io/badge/Docker-Ready-blue"/>
+</p>
 
 ---
 
+## 🚀 Project Overview
 
+**AI-Powered Kisan Assistance Platform** is a **production-ready Agentic GenAI system**
+designed to empower farmers with **intelligent, timely, and accessible agricultural assistance**.
 
+### 🌾 What the Platform Delivers
+- 🌱 **Early crop disease detection** using Computer Vision  
+- 💊 **Precise pesticide dosage recommendations** to prevent overuse  
+- 🌦️ **Weather-aware risk alerts** for safe and effective spraying  
+- 💬 **Conversational assistance in Hindi** via chat & voice AI  
 
+### 🧠 Technology at the Core
+This platform seamlessly integrates:
+- Computer Vision (CNN)
+- Agentic RAG (Retrieval-Augmented Generation)
+- Large Language Models (LLMs)
+- Voice AI  
 
+into a **single intelligent agriculture assistant**, ensuring:
+- ✅ Document-grounded answers  
+- ✅ Accurate recommendations  
+- ✅ Farmer-friendly explanations  
 
-
+---
 
 ## 🚜 Problem Statement
 
-- Farmers face severe crop losses due to:
-- Late disease identification
-- Incorrect pesticide dosage
-- Non-personalized advisory systems
-- Lack of regional language support
+Farmers face severe crop losses due to:
 
-❌ Existing solutions are fragmented, non-AI, and non-interactive.
+- ❌ Late disease identification  
+- ❌ Incorrect pesticide dosage  
+- ❌ Non-personalized advisory systems  
+- ❌ Lack of regional language support  
+
+> Existing solutions are **fragmented, non-AI, and non-interactive**.
+
 ---
 
+## 🧠 System Flow (Agentic RAG Architecture)
 
 ```mermaid
 flowchart TD
@@ -66,97 +91,3 @@ F --> H[Hindi Voice Assistant (VAPI.ai)]
 
 G --> I[Farmer Decision Support]
 H --> I
-
-
-
-## 💡 Solution
-The AI-Powered Kisan Assistance Platform delivers a unified AI-driven solution that:
-
--📸 Detects potato crop diseases from images
--🧠 Generates document-grounded treatment recommendations using GenAI
--💊 Calculates exact pesticide dosage based on field size
--🌦️ Provides weather-based disease and spray risk advisories
--💬 Enables conversational support via chatbot and Hindi voice assistant
----
-
-## ✨ Key Features
-- 📸 Potato disease detection (Early & Late Blight) with **99%+ accuracy**
-- 🧠 GenAI-based treatment recommendations using **Agentic RAG**
-- 💊 Spray quantity calculation based on field size
-- 🌦️ 24-hour weather-based disease risk prediction
-- 💬 Memory-enabled AI chatbot for follow-up queries
-- 🎙️ Hindi voice assistant using **VAPI.ai webhook-based tool calling**
-
----
-
-## 🛠️ Tech Stack
-- **Backend:** Spring Boot, Spring AI, Microservices, REST APIs  
-- **AI / ML:** CNN, LLMs, Agentic RAG  
-- **Vector Database:** Qdrant  
-- **Frontend:** React.js  
-- **Voice AI:** VAPI.ai  
-- **DevOps:** Docker  
-
----
-
-## 🏗️ System Architecture
-📸 Image Upload
-      ↓
-🧠 CNN Disease Detection
-      ↓
-🧠 Agentic RAG Pipeline
-   ├─ Query Rewriter
-   ├─ Qdrant Vector Search
-   ├─ LLM Answer Generator
-   └─ Critic Agent
-      ↓
-💊 Treatment + Dosage APIs
-      ↓
-🌦️ Weather Risk Engine
-      ↓
-🖥️ React UI / 🎙️ Hindi Voice Assistant
-
-
----
-
-## 🚀 How to Run (High-Level)
-1. Clone the repository  
-2. Start backend services (Spring Boot)  
-3. Start frontend (React.js)  
-4. Configure vector database (Qdrant)  
-5. Access the application via browser  
-
-> Detailed setup steps can be added based on deployment environment.
-
----
-
-## 🎯 Impact
-This platform aims to reduce crop loss, minimize chemical misuse, and provide accessible AI-driven agricultural guidance to farmers, especially in rural and non-English-speaking regions.
-
----
-
-
-
-
-🔗 Demo Deployment (Hackathon Setup)
-
-Deployment Mode: Production-like Local Demo
-
-Backend & GenAI Services:
-Spring Boot microservices running locally with a Dockerized Qdrant vector database.
-
-AI & Data Layer:
-CNN-based disease detection and Agentic RAG pipeline operating in a production-like local environment.
-
-Webhook & Voice AI:
-Secure public exposure using ngrok, enabling real-time VAPI.ai webhook-based Hindi voice assistant integration.
-
-Frontend:
-React-based user interface connected to backend APIs.
-
-Note:
-For the hackathon demo, the system is deployed locally with Dockerized infrastructure and securely exposed via ngrok for webhook communication.
-The architecture is cloud-ready and can be deployed on any standard cloud VM (AWS / GCP / DigitalOcean) without architectural changes.
-## 👨‍💻 Author
-**Nitin Kamlesh**  
-Backend & GenAI Engineer  
