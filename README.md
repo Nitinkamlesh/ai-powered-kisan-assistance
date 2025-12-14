@@ -91,3 +91,100 @@ F --> H[Hindi Voice Assistant - VAPI.ai]
 
 G --> I[Farmer Decision Support]
 H --> I
+
+
+flowchart TD
+
+A[📸 Crop Image Upload]
+B[🧠 CNN Disease Detection]
+C1[✅ Healthy Crop]
+C2[🦠 Disease Detected]
+D[🧠 Agentic RAG Orchestrator]
+E[💊 Treatment & Dosage Engine]
+F[🌦️ Weather Risk Engine]
+G[🖥️ Web Dashboard]
+H[🎙️ Hindi Voice Assistant]
+I[👨‍🌾 Farmer Decision Support]
+
+A --> B
+B -->|Healthy| C1
+B -->|Disease| C2
+C2 --> D
+D --> E
+E --> F
+F --> G
+F --> H
+G --> I
+H --> I
+
+%% Color Definitions
+classDef vision fill:#FFE0B2,stroke:#E65100,stroke-width:2px;
+classDef ai fill:#E1F5FE,stroke:#0277BD,stroke-width:2px;
+classDef engine fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px;
+classDef ui fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2px;
+classDef user fill:#FFFDE7,stroke:#F9A825,stroke-width:2px;
+
+class A,B vision
+class D ai
+class E,F engine
+class G,H ui
+class I user
+
+
+flowchart LR
+
+subgraph Frontend
+UI[React Web App]
+end
+
+subgraph Backend_Services [Spring Boot Microservices]
+IMG[Image Service]
+CNN[CNN Prediction Service]
+RAG[Agentic RAG Service]
+DOS[Dosage Service]
+WEA[Weather Service]
+VOICE[Voice Webhook Service]
+end
+
+subgraph AI_Data
+QDR[Qdrant Vector DB]
+LLM[LLM Provider]
+end
+
+UI --> IMG
+IMG --> CNN
+CNN --> RAG
+RAG --> QDR
+RAG --> LLM
+RAG --> DOS
+DOS --> WEA
+WEA --> UI
+
+VOICE --> RAG
+VOICE --> UI
+
+
+flowchart LR
+
+subgraph SYSTEM_PIPELINE [🖥️ System Pipeline]
+A[Image Upload]
+B[API Gateway]
+C[Frontend UI]
+end
+
+subgraph AI_PIPELINE [🧠 AI / GenAI Pipeline]
+D[CNN Model]
+E[Agentic RAG]
+F[Vector Search]
+G[LLM Reasoning]
+H[Critic Agent]
+end
+
+A --> B
+B --> D
+D -->|Disease Info| E
+E --> F
+F --> G
+G --> H
+H --> C
+
