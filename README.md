@@ -93,7 +93,6 @@ G --> I[Farmer Decision Support]
 H --> I
 
 
-
 flowchart TD
 
 A[📸 Image Upload]
