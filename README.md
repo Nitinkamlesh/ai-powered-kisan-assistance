@@ -2,51 +2,69 @@
 ### Agentic GenAI System for Smart & Sustainable Agriculture
 
 <p align="center">
-  <img src="assets/logo.png" alt="Kisan AI Logo" width="200"/>
-</p>
+  <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/>
+  </p>
 
 <p align="center">
   <b>
-    An end-to-end AI + GenAI powered agriculture intelligence platform that helps 
-    farmers make accurate, timely, and language-friendly decisions.
+    An end-to-end GenAI-powered agriculture assistance system helping farmers detect 
+    crop diseases early, optimize pesticide usage, and make informed decisions.
   </b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet?style=for-the-badge&logo=openai"/>
-  <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen?style=for-the-badge&logo=spring"/>
-  <img src="https://img.shields.io/badge/Computer%20Vision-CNN-orange?style=for-the-badge&logo=tensorflow"/>
-  <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red?style=for-the-badge&logo=googletranslate"/>
-  <img src="https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker"/>
+  <a href="#-demo-video">View Demo</a> •
+  <a href="#-key-features">Features</a> •
+  <a href="#-system-architecture">Architecture</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-getting-started">Setup</a>
 </p>
 
 <p align="center">
-  <a href="#-project-overview">Overview</a> •
-  <a href="#-system-architecture">Architecture</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-key-features">Features</a> •
-  <a href="#-installation">Installation</a>
+  <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen?style=for-the-badge&logo=spring"/>
+  <img src="https://img.shields.io/badge/Vision-CNN%2099%25-orange?style=for-the-badge&logo=tensorflow"/>
+  <img src="https://img.shields.io/badge/Voice-VAPI.ai-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Backend-Spring%20Boot-green?style=for-the-badge&logo=springboot"/>
 </p>
 
 ---
 
-## 🚀 Project Overview
+## 🚜 Problem Statement
 
-**AI-Powered Kisan Assistance Platform** is a **production-ready Agentic GenAI system** designed to empower farmers with intelligent, timely, and accessible agricultural assistance. Bridging the gap between complex agronomy data and rural farmers, we utilize **Agentic RAG** and **Voice AI** to deliver expert advice in Hindi.
+Farmers in India face significant crop losses and financial distress due to:
+* ❌ **Late Disease Identification:** Lack of timely access to agricultural experts.
+* ❌ **Incorrect Pesticide Dosage:** Guesswork leads to chemical overuse and soil damage.
+* ❌ **Language Barriers:** Most advisory systems are not available in regional languages.
+* ❌ **Static Information:** Generic chatbots lack real-time context like weather or field size.
 
-### 🎥 Demo Video
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://youtu.be/YOUR_VIDEO_LINK)
+> **The Solution:** A unified, Agentic AI platform that acts as a **Digital Agronomist**, combining Computer Vision (Sight), GenAI (Reasoning), and Voice (Speech) to guide farmers in Hindi.
+
 ---
 
-## 🚜 The Problem Statement
+## ✨ Key Features
 
-Farmers in India face severe crop losses and financial distress due to:
-* ❌ **Late Disease Identification:** Lack of access to experts for immediate diagnosis.
-* ❌ **Incorrect Pesticide Usage:** Overuse of chemicals damages soil health and increases costs.
-* ❌ **Generic Advice:** Weather and soil conditions are hyper-local; generic advisories fail.
-* ❌ **Language Barrier:** Most high-tech tools are in English, excluding the rural demographic.
+### 1. 📸 Precision Disease Detection
+* Custom **CNN Model** trained on potato leaf datasets.
+* Detects **Early Blight** and **Late Blight** with **99%+ accuracy**.
+* Provides instant visual feedback on crop health.
 
-> **Our Solution:** A single intelligent assistant combining **Computer Vision** (eyes), **LLMs** (brain), and **Voice AI** (speech) to guide farmers from diagnosis to dosage.
+### 2. 🧠 Agentic RAG Advisory (The "Brain")
+* Uses **Spring AI** to orchestrate an autonomous agent.
+* **Document Grounded:** Retrieves treatment protocols from verified agricultural PDFs (stored in **Qdrant**).
+* **Memory Enabled:** Remembers context across the conversation for follow-up queries.
+
+### 3. 💊 Smart Dosage Engine
+* Unlike generic tools, our system asks for the field size (acres/hectares).
+* Calculates the **exact pesticide quantity** needed, minimizing cost and environmental impact.
+
+### 4. 🌦️ Weather-Aware Risk Guard
+* The Agent proactively checks **24-hour weather forecasts** before recommending sprays.
+* *Scenario:* If rain is predicted, the AI warns the farmer to delay spraying to prevent washout.
+
+### 5. 🎙️ Hindi Voice Assistant
+* Integrated with **VAPI.ai** using **Webhook-based tool calling**.
+* Farmers can speak naturally in Hindi (*"Mere aaloo mein keeda laga hai"*), and the system responds with voice audio powered by the backend knowledge base.
 
 ---
 
