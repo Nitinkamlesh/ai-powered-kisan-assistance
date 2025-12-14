@@ -14,6 +14,7 @@ AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed
 -💬 Conversational assistance in Hindi
 
 The platform combines Computer Vision, Agentic RAG, Large Language Models, and Voice AI into a single intelligent agriculture assistant.
+---
 
 ## 🚜 Problem Statement
 
