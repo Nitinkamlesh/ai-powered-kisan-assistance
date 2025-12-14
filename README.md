@@ -4,6 +4,8 @@
 Agentic GenAI System for Smart & Sustainable Agriculture
 <p align="center"> <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/> </p> <p align="center"> <b> An end-to-end AI + GenAI powered agriculture intelligence platform that helps farmers make accurate, timely, and language-friendly decisions. </b> </p> <p align="center"> <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet"/> <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen"/> <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange"/> <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red"/> <img src="https://img.shields.io/badge/Docker-Ready-blue"/> </p>
 
+
+
 ## 🚀 Project Overview
 AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed to empower farmers with intelligent, timely, and accessible agricultural assistance.
 - 🌾 What the platform delivers
@@ -12,7 +14,7 @@ AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed
 - 🌦️ Weather-aware risk alerts for safe and effective spraying
 - 💬 Conversational assistance in Hindi via chat and voice AI
 - 🧠 Technology at the core
-- The platform seamlessly integrates Computer Vision, Agentic RAG, Large Language Models (LLMs), and Voice AI into a single intelligent agriculture assistant, enabling accurate, document-grounded, and farmer-friendly decision support.
+The platform seamlessly integrates Computer Vision, Agentic RAG, Large Language Models (LLMs), and Voice AI into a single intelligent agriculture assistant, enabling accurate, document-grounded, and farmer-friendly decision support.
 
 ---
 
@@ -30,6 +32,8 @@ AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed
 -Incorrect pesticide dosage
 -Non-personalized advisory systems
 -Lack of regional language support
+
+---
 
 ❌ Existing solutions are fragmented, non-AI, and non-interactive.
 
