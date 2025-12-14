@@ -40,30 +40,33 @@ The platform seamlessly integrates Computer Vision, Agentic RAG, Large Language 
 ```mermaid
 flowchart TD
 
-A[📸 Crop Image Upload] --> B[🧠 CNN Disease Detection]
+A[Crop Image Upload] --> B[CNN Disease Detection]
 
-B -->|Healthy| C1[✅ Healthy Crop]
-B -->|Disease Detected| C2[⚠️ Early / Late Blight]
+B -->|Healthy| C1[Healthy Crop]
+B -->|Disease Detected| C2[Early / Late Blight]
 
-C2 --> D[🧠 Agentic RAG Orchestrator]
+C2 --> D[Agentic RAG Orchestrator]
 
 subgraph RAG_PIPELINE [Agentic RAG Pipeline]
-    D1[🔍 Query Rewriter Agent]
-    D2[📚 Qdrant Vector Retrieval]
-    D3[🧠 LLM Answer Generator]
-    D4[✅ Critic & Validation Agent]
-    D1 --> D2 --> D3 --> D4
+    D1[Query Rewriter Agent]
+    D2[Qdrant Vector Retrieval]
+    D3[LLM Answer Generator]
+    D4[Critic & Validation Agent]
+    D1 --> D2
+    D2 --> D3
+    D3 --> D4
 end
 
 D --> RAG_PIPELINE
-RAG_PIPELINE --> E[💊 Treatment & Spray Dosage Engine]
-E --> F[🌦️ Weather Risk Advisory Engine]
+RAG_PIPELINE --> E[Treatment & Spray Dosage Engine]
+E --> F[Weather Risk Advisory Engine]
 
-F --> G[🖥️ Web Dashboard (React)]
-F --> H[🎙️ Hindi Voice Assistant (VAPI.ai)]
+F --> G[Web Dashboard (React)]
+F --> H[Hindi Voice Assistant (VAPI.ai)]
 
-G --> I[👨‍🌾 Farmer Decision Support]
+G --> I[Farmer Decision Support]
 H --> I
+
 
 
 ## 💡 Solution
