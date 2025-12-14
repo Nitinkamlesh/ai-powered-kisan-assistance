@@ -33,9 +33,9 @@ The platform seamlessly integrates Computer Vision, Agentic RAG, Large Language 
 - Non-personalized advisory systems
 - Lack of regional language support
 
+❌ Existing solutions are fragmented, non-AI, and non-interactive.
 ---
 
-❌ Existing solutions are fragmented, non-AI, and non-interactive.
 
 ---
 flowchart TD
