@@ -122,13 +122,10 @@ Demo Deployment (Hackathon Setup)
 
 • Backend & GenAI Services:
   Deployed locally using Spring Boot microservices with a Dockerized Qdrant vector database.
-
 • AI & Data Layer:
   CNN-based disease detection and Agentic RAG pipeline running in a production-like local environment.
-
 • Webhook & Voice AI:
   Secure public exposure via ngrok, enabling real-time VAPI.ai webhook-based Hindi voice assistant integration.
-
 • Frontend:
   React-based user interface connected to backend APIs.
 
