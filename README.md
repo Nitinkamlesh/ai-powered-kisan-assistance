@@ -56,30 +56,81 @@ We utilize an **Agentic RAG (Retrieval-Augmented Generation)** approach where th
 
 ```mermaid
 flowchart TD
-    subgraph User_Interaction
-      A[📸 Image Upload] --> B[CNN Disease Detection]
-      H[🎙️ Hindi Voice Input] --> I[Voice-to-Text]
+    %% Actors
+    Farmer[👨‍🌾 Farmer / User]
+
+    %% Frontend Layer
+    subgraph Frontend [React JS Client]
+        UI[Web Dashboard]
+        VoiceUI[🎙️ VAPI.ai Voice Interface]
     end
 
-    subgraph Decision_Engine
-      B -->|Disease Detected| C[Agentic RAG Orchestrator]
-      I --> C
-      
-      C --> D1{Query Planner}
-      D1 -->|Retrieve Info| D2[(Qdrant Vector DB)]
-      D1 -->|Scientific Validation| D3[LLM Reasoner]
-      
-      D3 --> E[💊 Dosage Calculator Engine]
-      D3 --> F[🌦️ Weather Risk Engine]
+    %% Backend Layer
+    subgraph Backend [Spring Boot Microservices Cluster]
+        Gateway[API Gateway / Controller]
+        
+        subgraph AI_Core [Spring AI Service]
+            Agent[🤖 Agentic RAG Orchestrator]
+            Prompt[Prompt Engineering Template]
+        end
+        
+        subgraph Vision_Core [Computer Vision Service]
+            CNN[🧠 CNN Model - 99% Acc]
+            Classify[Disease Classifier: Early/Late Blight]
+        end
+        
+        subgraph Tools [Agent Tools / Functions]
+            WeatherTool[🌦️ 24h Weather Service]
+            DosageTool[💊 Dosage Calculator]
+        end
     end
 
-    subgraph Output
-      E --> G[Final Response Generator]
-      F --> G
-      G -->|Visual| UI[Web Dashboard]
-      G -->|Audio| V[VAPI.ai Voice Output]
+    %% Data Layer
+    subgraph Data [Data Persistence]
+        Qdrant[(Qdrant Vector DB)]
+        PDF_Know[📄 Ag PDF Knowledge Base]
     end
 
-    style C fill:#f9f,stroke:#333,stroke-width:2px
-    style D2 fill:#bbf,stroke:#333,stroke-width:2px
-    style B fill:#bfb,stroke:#333,stroke-width:2px
+    %% Connections
+    Farmer --> UI
+    Farmer --> VoiceUI
+    
+    %% Voice Flow
+    VoiceUI -->|Audio-to-Text| Gateway
+    
+    %% Image Flow
+    UI -->|Upload Image| Gateway
+    Gateway --> CNN
+    CNN --> Classify
+    Classify -->|Result: Late Blight| Agent
+
+    %% Text/Chat Flow
+    UI -->|Query| Gateway
+    Gateway --> Agent
+    
+    %% Agentic RAG Logic (The Brain)
+    Agent -->|1. Retrieve Context| Qdrant
+    Qdrant -.->|Embeddings| PDF_Know
+    
+    Agent -->|2. Check Conditions| WeatherTool
+    Agent -->|3. Calculate Medicine| DosageTool
+    
+    %% Tools providing info back to Agent
+    WeatherTool -->|Rain Forecast| Agent
+    DosageTool -->|Quantity: 200ml/acre| Agent
+
+    %% Final Output
+    Agent -->|Synthesized Answer| Gateway
+    Gateway --> UI
+    Gateway -->|Text-to-Speech| VoiceUI
+
+    %% Styling
+    classDef ai fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef vision fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+    classDef tools fill:#fff3e0,stroke:#e65100,stroke-width:2px;
+    classDef db fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+
+    class Agent,Prompt ai;
+    class CNN,Classify vision;
+    class WeatherTool,DosageTool tools;
+    class Qdrant,PDF_Know db;
