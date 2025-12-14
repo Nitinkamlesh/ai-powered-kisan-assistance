@@ -84,24 +84,17 @@ The **AI-Powered Kisan Assistance Platform** delivers a unified, AI-driven solut
 
 ## 🛠️ Tech Stack
 
-### Backend
-- Spring Boot
-- Spring AI
-- Microservices
-- REST APIs
+### 🧩 Backend
+<p> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20AI-00C853?style=for-the-badge&logo=spring&logoColor=white"/> <img src="https://img.shields.io/badge/Microservices-FF6F00?style=for-the-badge"/> <img src="https://img.shields.io/badge/REST%20APIs-005571?style=for-the-badge"/> </p>
 
-### AI / ML
-- CNN (Computer Vision)
-- LLMs
-- Agentic RAG
+### 🧠 AI / ML
+<p> <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange?style=for-the-badge"/> <img src="https://img.shields.io/badge/LLMs-Generative%20AI-blueviolet?style=for-the-badge"/> <img src="https://img.shields.io/badge/Agentic%20RAG-Advanced%20GenAI-8E24AA?style=for-the-badge"/> </p>
 
-### Data & Infra
-- Qdrant (Vector Database)
-- Docker
+### 🗄️ Data & Infrastructure
+<p> <img src="https://img.shields.io/badge/Qdrant-Vector%20DB-FF5722?style=for-the-badge&logo=databricks&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white"/> </p>
 
-### Frontend & Voice
-- React.js
-- VAPI.ai (Hindi Voice Assistant)
+### 🖥️ Frontend & Voice AI
+<p> <img src="https://img.shields.io/badge/React.js-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/VAPI.ai-Hindi%20Voice%20AI-E53935?style=for-the-badge&logo=googleassistant&logoColor=white"/> </p>
 
 
 ---
