@@ -1,13 +1,57 @@
 # AI-Powered Kisan Assistance Platform 🌾🤖
 
-An end-to-end GenAI-powered agriculture assistance system designed to help farmers detect crop diseases early, optimize pesticide usage, and make informed decisions using AI-driven insights.
+🌾 AI-Powered Kisan Assistance Platform
+Agentic GenAI System for Smart & Sustainable Agriculture
+<p align="center"> <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/> </p> <p align="center"> <b>An end-to-end AI + GenAI powered agriculture intelligence platform helping farmers make accurate, timely, and language-friendly decisions.</b> </p> <p align="center"> <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet"/> <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen"/> <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange"/> <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red"/> <img src="https://img.shields.io/badge/Docker-Ready-blue"/> </p>
+
+🚀 Project Overview
+
+AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed to support farmers with early crop disease detection, precise pesticide guidance, weather-aware risk alerts, and conversational assistance in Hindi.
+
+This platform integrates Computer Vision, Agentic RAG, LLMs, and Voice AI into a single intelligent agriculture assistant.
+
+🚜 Problem Statement
+
+Farmers face severe crop losses due to:
+
+Late disease identification
+
+Incorrect pesticide dosage
+
+Non-personalized advisory systems
+
+Lack of regional language support
+
+❌ Existing solutions are fragmented, non-AI, and non-interactive.
 
 ---
 
-## 🚜 Problem Statement
-Farmers often face significant crop losses due to late disease detection, incorrect pesticide dosage, and lack of timely, accessible agricultural advisory systems—especially in regional languages.
+flowchart TD
+    A[📸 Farmer Uploads Crop Image] --> B[🧠 CNN Disease Detection Model]
 
----
+    B -->|Healthy| C1[✅ Crop is Healthy]
+    B -->|Early / Late Blight| C2[⚠️ Disease Identified]
+
+    C2 --> D[🧠 Agentic RAG System]
+
+    subgraph Agentic_RAG [🤖 Agentic RAG Pipeline]
+        D1[🔍 Query Rewriter Agent]
+        D2[📚 Qdrant Vector Search]
+        D3[🧠 LLM Answer Generator]
+        D4[✅ Critic / Validation Agent]
+        D1 --> D2 --> D3 --> D4
+    end
+
+    D --> Agentic_RAG
+    Agentic_RAG --> E[💊 Treatment & Spray Dosage Engine]
+    E --> F[🌦️ Weather Risk Advisory Engine]
+
+    F --> G[🖥️ React Web Dashboard]
+    F --> H[🎙️ Hindi Voice Assistant (VAPI.ai)]
+
+    G --> I[👨‍🌾 Farmer Decision Support]
+    H --> I
+
 
 ## 💡 Solution
 The AI-Powered Kisan Assistance Platform provides a unified AI-driven solution that:
@@ -40,10 +84,22 @@ The AI-Powered Kisan Assistance Platform provides a unified AI-driven solution t
 ---
 
 ## 🏗️ System Architecture
-Image Upload → CNN Disease Detection →  
-Agentic RAG (Qdrant + LLM) →  
-Treatment & Advisory APIs →  
-React UI / Hindi Voice Assistant
+📸 Image Upload
+      ↓
+🧠 CNN Disease Detection
+      ↓
+🧠 Agentic RAG Pipeline
+   ├─ Query Rewriter
+   ├─ Qdrant Vector Search
+   ├─ LLM Answer Generator
+   └─ Critic Agent
+      ↓
+💊 Treatment + Dosage APIs
+      ↓
+🌦️ Weather Risk Engine
+      ↓
+🖥️ React UI / 🎙️ Hindi Voice Assistant
+
 
 ---
 
