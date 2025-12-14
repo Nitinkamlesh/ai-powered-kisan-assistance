@@ -168,3 +168,13 @@ flowchart TD
     class CNN,Classify vision;
     class WeatherTool,DosageTool tools;
     class Qdrant,PDF_Know db;
+```
+## 🎯 Impact
+This platform aims to reduce crop loss, minimize chemical misuse, and provide accessible AI-driven agricultural guidance to farmers, especially in rural and non-English-speaking regions.
+
+---
+
+## 👨‍💻 Author
+**Nitin Kamlesh**  
+Backend & GenAI Engineer  
+
