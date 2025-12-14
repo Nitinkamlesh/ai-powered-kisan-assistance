@@ -3,18 +3,23 @@
 🌾 AI-Powered Kisan Assistance Platform 🤖
 Agentic GenAI System for Smart & Sustainable Agriculture
 <p align="center"> <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/> </p> <p align="center"> <b> An end-to-end AI + GenAI powered agriculture intelligence platform that helps farmers make accurate, timely, and language-friendly decisions. </b> </p> <p align="center"> <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet"/> <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen"/> <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange"/> <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red"/> <img src="https://img.shields.io/badge/Docker-Ready-blue"/> </p>
+🚀 Project Overview
 
-## 🚀 Project Overview
+AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed to empower farmers with intelligent, timely, and accessible agricultural assistance.
 
-AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed to support farmers with:
+🌾 What the platform delivers
 
--🌱 Early crop disease detection
--💊 Precise pesticide dosage recommendations
--🌦️ Weather-aware risk alerts
--💬 Conversational assistance in Hindi
+🌱 Early crop disease detection using computer vision
 
-The platform combines Computer Vision, Agentic RAG, Large Language Models, and Voice AI into a single intelligent agriculture assistant.
----
+💊 Precise pesticide dosage recommendations to prevent overuse
+
+🌦️ Weather-aware risk alerts for safe and effective spraying
+
+💬 Conversational assistance in Hindi via chat and voice AI
+
+🧠 Technology at the core
+
+The platform seamlessly integrates Computer Vision, Agentic RAG, Large Language Models (LLMs), and Voice AI into a single intelligent agriculture assistant, enabling accurate, document-grounded, and farmer-friendly decision support.
 
 ## 🚜 Problem Statement
 
