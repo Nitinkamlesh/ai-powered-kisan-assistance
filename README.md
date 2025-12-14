@@ -37,32 +37,38 @@ The platform seamlessly integrates Computer Vision, Agentic RAG, Large Language 
 ---
 
 
+
+## flowchart TD
+
+A[📸 Farmer Uploads Crop Image] --> B[🧠 CNN Disease Detection Model]
+
+B -->|Healthy| C1[✅ Crop is Healthy]
+B -->|Early / Late Blight| C2[⚠️ Disease Identified]
+
+C2 --> D[🧠 Agentic RAG System]
+
+subgraph Agentic_RAG [🤖 Agentic RAG Pipeline]
+    D1[🔍 Query Rewriter Agent]
+    D2[📚 Qdrant Vector Search]
+    D3[🧠 LLM Answer Generator]
+    D4[✅ Critic / Validation Agent]
+    D1 --> D2 --> D3 --> D4
+end
+
+D --> Agentic_RAG
+Agentic_RAG --> E[💊 Treatment & Spray Dosage Engine]
+E --> F[🌦️ Weather Risk Advisory Engine]
+
+F --> G[🖥️ React Web Dashboard]
+F --> H[🎙️ Hindi Voice Assistant (VAPI.ai)]
+
+G --> I[👨‍🌾 Farmer Decision Support]
+H --> I
+
+This architecture demonstrates an end-to-end AI pipeline combining
+Computer Vision, Agentic GenAI (RAG), and Voice AI in a production-ready design.
 ---
-flowchart TD
-    A[📸 Farmer Uploads Crop Image] --> B[🧠 CNN Disease Detection Model]
 
-    B -->|Healthy| C1[✅ Crop is Healthy]
-    B -->|Early / Late Blight| C2[⚠️ Disease Identified]
-
-    C2 --> D[🧠 Agentic RAG System]
-
-    subgraph Agentic_RAG [🤖 Agentic RAG Pipeline]
-        D1[🔍 Query Rewriter Agent]
-        D2[📚 Qdrant Vector Search]
-        D3[🧠 LLM Answer Generator]
-        D4[✅ Critic / Validation Agent]
-        D1 --> D2 --> D3 --> D4
-    end
-
-    D --> Agentic_RAG
-    Agentic_RAG --> E[💊 Treatment & Spray Dosage Engine]
-    E --> F[🌦️ Weather Risk Advisory Engine]
-
-    F --> G[🖥️ React Web Dashboard]
-    F --> H[🎙️ Hindi Voice Assistant (VAPI.ai)]
-
-    G --> I[👨‍🌾 Farmer Decision Support]
-    H --> I
 
 
 ## 💡 Solution
