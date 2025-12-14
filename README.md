@@ -4,24 +4,24 @@
 Agentic GenAI System for Smart & Sustainable Agriculture
 <p align="center"> <img src="assets/logo.png" alt="Kisan AI Logo" width="180"/> </p> <p align="center"> <b> An end-to-end AI + GenAI powered agriculture intelligence platform that helps farmers make accurate, timely, and language-friendly decisions. </b> </p> <p align="center"> <img src="https://img.shields.io/badge/GenAI-Agentic%20RAG-blueviolet"/> <img src="https://img.shields.io/badge/Spring%20AI-Enabled-brightgreen"/> <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange"/> <img src="https://img.shields.io/badge/Language-Hindi%20Voice-red"/> <img src="https://img.shields.io/badge/Docker-Ready-blue"/> </p>
 
-##🚀 Project Overview
+## 🚀 Project Overview
 
 AI-Powered Kisan Assistance Platform is a production-ready GenAI system designed to support farmers with:
 
-🌱 Early crop disease detection
-💊 Precise pesticide dosage recommendations
-🌦️ Weather-aware risk alerts
-💬 Conversational assistance in Hindi
+-🌱 Early crop disease detection
+-💊 Precise pesticide dosage recommendations
+-🌦️ Weather-aware risk alerts
+-💬 Conversational assistance in Hindi
 
 The platform combines Computer Vision, Agentic RAG, Large Language Models, and Voice AI into a single intelligent agriculture assistant.
 
-##🚜 Problem Statement
+## 🚜 Problem Statement
 
-Farmers face severe crop losses due to:
-Late disease identification
-Incorrect pesticide dosage
-Non-personalized advisory systems
-Lack of regional language support
+-Farmers face severe crop losses due to:
+-Late disease identification
+-Incorrect pesticide dosage
+-Non-personalized advisory systems
+-Lack of regional language support
 
 ❌ Existing solutions are fragmented, non-AI, and non-interactive.
 
@@ -56,11 +56,11 @@ flowchart TD
 ## 💡 Solution
 The AI-Powered Kisan Assistance Platform delivers a unified AI-driven solution that:
 
-📸 Detects potato crop diseases from images
-🧠 Generates document-grounded treatment recommendations using GenAI
-💊 Calculates exact pesticide dosage based on field size
-🌦️ Provides weather-based disease and spray risk advisories
-💬 Enables conversational support via chatbot and Hindi voice assistant
+-📸 Detects potato crop diseases from images
+-🧠 Generates document-grounded treatment recommendations using GenAI
+-💊 Calculates exact pesticide dosage based on field size
+-🌦️ Provides weather-based disease and spray risk advisories
+-💬 Enables conversational support via chatbot and Hindi voice assistant
 ---
 
 ## ✨ Key Features
