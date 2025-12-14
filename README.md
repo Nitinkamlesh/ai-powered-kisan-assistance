@@ -35,37 +35,74 @@
 
 
 ## 🚜 Problem Statement
-Farmers often face significant crop losses due to late disease detection, incorrect pesticide dosage, and lack of timely, accessible agricultural advisory systems—especially in regional languages.
+
+Indian farmers face significant crop losses due to:
+
+- ⏱️ **Late disease detection**
+- 💊 **Incorrect pesticide dosage**
+- 🌦️ **Ignoring weather risk during spraying**
+- 🗣️ **Lack of advisory systems in regional languages**
+
+❌ Existing solutions are fragmented, non-AI, and non-interactive.  
+✅ Farmers need a **single intelligent assistant**, not multiple tools.
+
 
 ---
 
 ## 💡 Solution
-The AI-Powered Kisan Assistance Platform provides a unified AI-driven solution that:
-- Detects potato crop diseases from images
-- Generates document-grounded treatment recommendations using GenAI
-- Calculates exact pesticide dosage
-- Provides weather-based risk advisories
-- Enables conversational support via chatbot and Hindi voice assistant
+
+The **AI-Powered Kisan Assistance Platform** delivers a unified, AI-driven solution that:
+
+- 📸 Detects potato crop diseases directly from images
+- 🧠 Generates **document-grounded treatment advice** using Agentic GenAI
+- 💊 Calculates **exact pesticide dosage** based on field size
+- 🌦️ Provides **weather-aware spray risk advisories**
+- 🎙️ Enables **Hindi conversational support** via chat & voice AI
+
 
 ---
 
 ## ✨ Key Features
+
 - 📸 Potato disease detection (Early & Late Blight) with **99%+ accuracy**
 - 🧠 GenAI-based treatment recommendations using **Agentic RAG**
 - 💊 Spray quantity calculation based on field size
 - 🌦️ 24-hour weather-based disease risk prediction
-- 💬 Memory-enabled AI chatbot for follow-up queries
+- 💬 Memory-enabled AI chatbot for follow-up questions
 - 🎙️ Hindi voice assistant using **VAPI.ai webhook-based tool calling**
+
 
 ---
 
+## 🏆 Why This Is Different
+
+✔️ Not a chatbot — an **Agentic AI system**  
+✔️ Tool-calling + validation logic  
+✔️ Domain-grounded agriculture intelligence  
+✔️ Designed for real farmers, not demos
+---
+
 ## 🛠️ Tech Stack
-- **Backend:** Spring Boot, Spring AI, Microservices, REST APIs  
-- **AI / ML:** CNN, LLMs, Agentic RAG  
-- **Vector Database:** Qdrant  
-- **Frontend:** React.js  
-- **Voice AI:** VAPI.ai  
-- **DevOps:** Docker  
+
+### Backend
+- Spring Boot
+- Spring AI
+- Microservices
+- REST APIs
+
+### AI / ML
+- CNN (Computer Vision)
+- LLMs
+- Agentic RAG
+
+### Data & Infra
+- Qdrant (Vector Database)
+- Docker
+
+### Frontend & Voice
+- React.js
+- VAPI.ai (Hindi Voice Assistant)
+
 
 ---
 
@@ -78,19 +115,29 @@ React UI / Hindi Voice Assistant
 ---
 
 ## 🚀 How to Run (High-Level)
-1. Clone the repository  
-2. Start backend services (Spring Boot)  
-3. Start frontend (React.js)  
-4. Configure vector database (Qdrant)  
-5. Access the application via browser  
 
-> Detailed setup steps can be added based on deployment environment.
+1. Clone the repository
+2. Start backend services (Spring Boot)
+3. Start frontend (React.js)
+4. Run Qdrant using Docker
+5. Access the application via browser
+
+> ℹ️ Detailed setup steps can be added based on deployment environment.
+
 
 ---
 
 ## 🧠 System Architecture
+## 🧠 System Architecture (Agentic RAG)
 
-We utilize an **Agentic RAG (Retrieval-Augmented Generation)** approach where the AI doesn't just "chat"—it orchestrates tools to validate dosage, check weather, and retrieve scientific data.
+Unlike traditional chatbots, this platform uses an **Agentic RAG architecture** where
+AI does not just answer questions — it **orchestrates tools** to:
+
+- Validate pesticide dosage
+- Check real-time weather conditions
+- Retrieve scientific & agriculture documents
+- Generate safe, explainable recommendations
+
 
 ```mermaid
 flowchart TD
@@ -174,11 +221,18 @@ flowchart TD
     class Qdrant,PDF_Know db;
 ```
 ## 🎯 Impact
-This platform aims to reduce crop loss, minimize chemical misuse, and provide accessible AI-driven agricultural guidance to farmers, especially in rural and non-English-speaking regions.
+
+This platform aims to:
+
+- 🌾 Reduce crop losses
+- 💊 Minimize chemical misuse
+- 🌍 Promote sustainable farming
+- 🗣️ Empower rural & non-English-speaking farmers with AI
+
 
 ---
-
 ## 👨‍💻 Author
+
 **Nitin Kamlesh**  
-Backend & GenAI Engineer  
+Backend & GenAI Engineer
 
