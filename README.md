@@ -106,13 +106,7 @@ The **AI-Powered Kisan Assistance Platform** delivers a unified, AI-driven solut
 
 ---
 
-## 🏗️ System Architecture
-Image Upload → CNN Disease Detection →  
-Agentic RAG (Qdrant + LLM) →  
-Treatment & Advisory APIs →  
-React UI / Hindi Voice Assistant
 
----
 
 ## 🚀 How to Run (High-Level)
 
@@ -127,7 +121,6 @@ React UI / Hindi Voice Assistant
 
 ---
 
-## 🧠 System Architecture
 ## 🧠 System Architecture (Agentic RAG)
 
 Unlike traditional chatbots, this platform uses an **Agentic RAG architecture** where
