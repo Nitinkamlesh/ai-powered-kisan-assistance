@@ -87,14 +87,41 @@ The **AI-Powered Kisan Assistance Platform** delivers a unified, AI-driven solut
 ### 🧩 Backend
 <p> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20AI-00C853?style=for-the-badge&logo=spring&logoColor=white"/> <img src="https://img.shields.io/badge/Microservices-FF6F00?style=for-the-badge"/> <img src="https://img.shields.io/badge/REST%20APIs-005571?style=for-the-badge"/> </p>
 
+| Technology        | Architectural Role        | Why It Matters                                |
+| ----------------- | ------------------------- | --------------------------------------------- |
+| **Spring Boot**   | Core backend framework    | Rapid development, production-ready APIs      |
+| **Spring AI**     | GenAI orchestration layer | Clean integration of LLMs, RAG & tool-calling |
+| **Microservices** | Modular service design    | Scalability, fault isolation, cloud readiness |
+| **REST APIs**     | Service communication     | Frontend, voice AI & external integrations    |
+
+
 ### 🧠 AI / ML
 <p> <img src="https://img.shields.io/badge/CNN-Computer%20Vision-orange?style=for-the-badge"/> <img src="https://img.shields.io/badge/LLMs-Generative%20AI-blueviolet?style=for-the-badge"/> <img src="https://img.shields.io/badge/Agentic%20RAG-Advanced%20GenAI-8E24AA?style=for-the-badge"/> </p>
+
+| Technology                | Architectural Role              | Why It Matters                                       |
+| ------------------------- | ------------------------------- | ---------------------------------------------------- |
+| **CNN (Computer Vision)** | Disease detection engine        | Early & accurate crop disease identification         |
+| **LLMs**                  | Reasoning & response generation | Human-like, explainable answers                      |
+| **Agentic RAG**           | AI decision orchestrator        | Tool-calling, validation & document-grounded outputs |
+
 
 ### 🗄️ Data & Infrastructure
 <p> <img src="https://img.shields.io/badge/Qdrant-Vector%20DB-FF5722?style=for-the-badge&logo=databricks&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white"/> </p>
 
+| Technology             | Architectural Role           | Why It Matters                                 |
+| ---------------------- | ---------------------------- | ---------------------------------------------- |
+| **Qdrant (Vector DB)** | Semantic knowledge retrieval | Accurate, context-aware recommendations        |
+| **Docker**             | Infrastructure packaging     | Consistent local, hackathon & cloud deployment |
+
+
 ### 🖥️ Frontend & Voice AI
 <p> <img src="https://img.shields.io/badge/React.js-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/VAPI.ai-Hindi%20Voice%20AI-E53935?style=for-the-badge&logo=googleassistant&logoColor=white"/> </p>
+
+| Technology   | Architectural Role | Why It Matters                                |
+| ------------ | ------------------ | --------------------------------------------- |
+| **React.js** | Web dashboard UI   | Real-time insights & farmer-friendly UX       |
+| **VAPI.ai**  | Voice AI interface | Hindi conversational access via webhook tools |
+
 
 
 ---
