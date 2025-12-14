@@ -13,13 +13,9 @@ This platform integrates Computer Vision, Agentic RAG, LLMs, and Voice AI into a
 🚜 Problem Statement
 
 Farmers face severe crop losses due to:
-
 Late disease identification
-
 Incorrect pesticide dosage
-
 Non-personalized advisory systems
-
 Lack of regional language support
 
 ❌ Existing solutions are fragmented, non-AI, and non-interactive.
