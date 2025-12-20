@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Ignore accidental copied folders
+Backend - Copy/
+Frontend - Copy/
+New folder/
+
