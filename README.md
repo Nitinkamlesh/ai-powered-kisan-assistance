@@ -11,10 +11,8 @@
 ---
 <p align="center">
   ## 🎥 Demo Video
-(Watch the platform in action – disease detection, AI advice & Hindi voice assistant)
 
-[https://www.youtube.com/watch?v=uzGPuKBdA_c]
-
+[![Watch the demo](https://www.vectorstock.com/royalty-free-vector/cheerful-farmer-logo-agriculture-nature-vector-33320750)](https://www.youtube.com/watch?v=uzGPuKBdA_c)
 ---
 </p>
 
