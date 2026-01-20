@@ -9,12 +9,7 @@
 </p>
 
 ---
-<p align="center">
-  ## 🎥 Demo Video
-(https://www.youtube.com/watch?v=uzGPuKBdA_c)
 
----
-</p>
 
 
 
