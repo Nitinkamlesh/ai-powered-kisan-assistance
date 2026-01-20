@@ -11,8 +11,9 @@
 ---
 <p align="center">
   ## 🎥 Demo Video
-
-[![Watch the demo](https://www.vectorstock.com/royalty-free-vector/cheerful-farmer-logo-agriculture-nature-vector-33320750)](https://www.youtube.com/watch?v=uzGPuKBdA_c)
+<p align="center">
+[![Watch the demo]](https://www.youtube.com/watch?v=uzGPuKBdA_c)
+  </p>
 ---
 </p>
 
