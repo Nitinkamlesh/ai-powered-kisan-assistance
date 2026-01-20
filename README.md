@@ -9,13 +9,15 @@
 </p>
 
 ---
-
-## 🎥 Demo Video
+<p align="center">
+  ## 🎥 Demo Video
 (Watch the platform in action – disease detection, AI advice & Hindi voice assistant)
 
 [https://www.youtube.com/watch?v=uzGPuKBdA_c]
 
 ---
+</p>
+
 
 
 <p align="center">
