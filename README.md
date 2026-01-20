@@ -8,6 +8,16 @@
   <img src="assets/logo.png" width="160" alt="Kisan AI Logo"/>
 </p>
 
+---
+
+## 🎥 Demo Video
+(Watch the platform in action – disease detection, AI advice & Hindi voice assistant)
+
+[https://www.youtube.com/watch?v=uzGPuKBdA_c]
+
+---
+
+
 <p align="center">
   An end-to-end <b>GenAI-powered agriculture intelligence platform</b> helping farmers
   detect crop diseases early, optimize pesticide usage, and make
